@@ -12,7 +12,7 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
-        <td>Type</td>
+        <th>Category</th>
     </tr>
 
     @foreach (var cheese in Model)
@@ -20,7 +20,7 @@
         <tr>
             <td>@cheese.Name</td>
             <td>@cheese.Description</td>
-            <td>@cheese.Type</td>
+            <td>@cheese.Category.Name</td>
         </tr>
     }
 </table>
