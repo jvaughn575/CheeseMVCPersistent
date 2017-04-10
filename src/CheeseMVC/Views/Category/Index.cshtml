@@ -1,0 +1,11 @@
+﻿
+
+<ul>
+@foreach(var cat in ViewBag.categories)
+{
+    <li>@cat.Name</li>
+}
+</ul>
+<p>
+    <a asp-controllers="Category" asp-action="Add">Add Category</a>
+</p>
